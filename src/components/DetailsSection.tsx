@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLang } from '@/contexts/LanguageContext';
-import { Home, Flame, ChefHat, Sun, Wifi } from 'lucide-react';
+import { Home, Flame, ChefHat, Sun, Wifi, Car } from 'lucide-react';
 
 const DetailsSection = () => {
   const { t } = useLang();
@@ -11,6 +11,7 @@ const DetailsSection = () => {
     { icon: ChefHat, fr: "Cuisine ouverte entièrement équipée + coin petit-déjeuner", en: "Fully equipped open kitchen with breakfast corner" },
     { icon: Sun, fr: "Terrasse ensoleillée avec vue panoramique", en: "Sunlit terrace with panoramic views" },
     { icon: Wifi, fr: "Wi-Fi, espaces de rangement, buanderie", en: "Wi-Fi, storage, laundry area" },
+    { icon: Car, fr: "Parking sur place + garage pour 3–4 véhicules", en: "On-site parking + garage for 3–4 vehicles" },
   ];
 
   return (

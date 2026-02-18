@@ -22,7 +22,8 @@ const SpaSection = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-charcoal/60 to-charcoal/30" />
 
       <div className="relative z-10 section-padding w-full">
-        <div className="max-w-2xl">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-2xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -49,6 +50,7 @@ const SpaSection = () => {
               ))}
             </div>
           </motion.div>
+          </div>
         </div>
       </div>
     </section>

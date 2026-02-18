@@ -57,19 +57,6 @@ const ContactSection = () => {
           </form>
         )}
 
-        <div className="mt-10 text-center">
-          <p className="text-ivory/40 text-sm font-sans mb-3">
-            {t("Ou réservez directement via notre agence partenaire", "Or book directly via our partner rental agency")}
-          </p>
-          <a
-            href="https://www.nendaz.ch"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-3 border border-gold/30 text-gold text-sm uppercase tracking-[0.15em] font-sans hover:bg-gold/10 transition-colors"
-          >
-            {t("Réserver via l'agence", "Book via the agency")}
-          </a>
-        </div>
       </div>
     </section>
   );

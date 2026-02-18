@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useLang } from '@/contexts/LanguageContext';
 import { MapPin, Car, SkipForward, Bus } from 'lucide-react';
+import quatreValleesImg from '@/assets/quatre-vallees.webp';
 
 const SkiAccessSection = () => {
   const { t } = useLang();
@@ -35,6 +36,21 @@ const SkiAccessSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="mt-10 rounded-2xl overflow-hidden"
+        >
+          <img
+            src={quatreValleesImg}
+            alt={t("Vue panoramique des 4 Vallées", "Panoramic view of the 4 Vallées")}
+            className="w-full h-auto object-cover max-h-[400px]"
+            loading="lazy"
+          />
+        </motion.div>
       </div>
     </section>
   );

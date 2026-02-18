@@ -18,7 +18,11 @@ const ContactSection = () => {
     if (honeypot) honeypot.value = '';
 
     const formData = new FormData(formRef.current);
-    const body = new URLSearchParams(formData as unknown as Record<string, string>).toString();
+    const entries: [string, string][] = [];
+    formData.forEach((value, key) => {
+      entries.push([key, value as string]);
+    });
+    const body = new URLSearchParams(entries).toString();
 
     try {
       const res = await fetch('/?no-cache=1', {
